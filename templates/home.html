@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" href="{% static 'assets/home.png' %}">
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            color: burlywood;
+            background-color: coral;
+            line-height: 80px;
+            text-align: center;
+            font-size: 40px;
+        }
+        h1:hover{
+            background-color: cornflowerblue;
+        }
+        
+    </style>
+</head>
+<body>
+
+<h1>Homepage</h1>
+<a href="{% url 'about' %}" class="btn btn-outline-info">About</a>
+<a href="{% url 'form' %}" class="btn btn-outline-success">Form</a>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus necessitatibus odio odit quasi recusandae rem ut. Amet architecto blanditiis cum illo natus nemo quas qui quos reiciendis, tempore, voluptates!</span><span>Commodi cumque delectus dignissimos esse ex harum illo, iste iure molestias nisi placeat recusandae reiciendis repellat soluta, suscipit tempora vitae. Animi consectetur doloribus et excepturi expedita itaque officia suscipit tempora.</span></p>
+
+<img src="{% static 'assets/w6.jpeg' %}" alt="">
+<img src="{% static 'assets/break.jpg' %}" alt="">
+<img src="{% static 'assets/w7.jpeg' %}" alt="">
+<img src="{% static 'assets/f2.jpg' %}" alt="">
+<img src="{% static 'assets/lunch.jpg' %}" alt="">
+<img src="{% static 'assets/comp.jpg' %}" alt="">
+<br><br>
+<h1>Payment</h1>
+<p class="paragraph2"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti doloribus eaque eius est expedita itaque iure laboriosam magnam maxime molestiae, non nulla obcaecati optio reiciendis sequi sint tempore voluptatum?</span><span>Commodi sequi, veniam? Aliquam aliquid amet dicta eos eum eveniet, ex fuga fugit inventore iure libero molestiae nihil nostrum pariatur quam quas qui quis quod recusandae saepe similique tempora voluptatum!</span></p>
+<img id="image" src="{% static 'assets/comp.jpg' %}" alt="">
+
+
+</body>
+</html>

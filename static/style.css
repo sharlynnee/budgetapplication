@@ -1,0 +1,11 @@
+.paragraph2{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+#image{
+    float: right;
+}
+body{
+    background-color: rgba(245, 190, 122, 0.89);
+}
